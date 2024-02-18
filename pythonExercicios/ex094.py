@@ -13,7 +13,7 @@ print(f"O total de pessoas cadastradas foi {len(lista)}")
 mulheres = []
 cont = 0
 for c in range(len(lista)):
-    for ind,valor in lista[c].items():
+    for ind,valor in lista[c].items(): #o lista[c] na verdade é um dicionário, já que sao vários dcionários dentro de uma lista
         if ind == "idade":
             cont += valor
         if ind == "sexo":

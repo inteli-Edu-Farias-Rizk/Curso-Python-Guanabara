@@ -1,26 +1,18 @@
-matriz = [[],[],[]]
-
-pares = 0
-terceira = 0
-for l in range (0,3):
-    for c in range(0,3):
-        num = int(input(f"Qual a num voçê quer adicionar a {l} {c}: "))
-        if c == 2:
-            terceira += num
-        if num % 2 == 0:
-            pares += num
-        matriz[l].append(num)
-        
-for l in range (0,3):
-    for c in range(0,3):
-        print(f"[{matriz[l][c]}]", end=" ")
-    print()
-    
-maior = 0
-    
-for g in range (0,3):
-    if maior < matriz[1][g]:
-        maior = matriz[1][g] 
-print(f'A soma de todos os valores pares é {pares}')
-print(f'A soma de todos os numeros da terceira coluna é {terceira}')
-print(f"O maior valor da segunda linha é {maior}")       
+dic = {}
+lista = []
+dic["jogador"] = input("Qual o nome do jogador: ")
+partidas = int(input("Quantas partidas ele jogou: "))
+while partidas > len(lista):
+    gols = int(input(f"Quantos gols na partida {len(lista) + 1}: "))
+    lista.append(gols)
+dic['gols'] = lista
+dic['total'] = sum(lista)
+print('=-' * 40)
+print(dic)
+print('=-' * 40)
+print(f"O jogador {dic['jogador']} jogou {partidas} partidas ")
+cont = 0
+for c in lista:
+    print(f"Na partida {cont +1}, fez {c} gols")
+    cont += 1
+print(f"Foi um total de {dic['total']}")
