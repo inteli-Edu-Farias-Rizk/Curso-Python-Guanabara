@@ -4,9 +4,6 @@ import os
 print(os.getcwd())
 
 
-#listar arquivos e pastas 
-print(listdir())
-
 
 #listar o sistema operacional:
 os.system('ver')
