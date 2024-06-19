@@ -13,6 +13,7 @@ class Console:
         item = re.findall("é \w*", string)
         name = item[0][2:]
         price = item[1][2:]
+        #aqui ele está passando os parametros para o própio constructor
         return cls(name, int(price))
     
 

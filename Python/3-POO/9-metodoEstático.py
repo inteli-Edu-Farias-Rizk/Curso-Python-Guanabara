@@ -8,7 +8,7 @@ class Language:
     def __init__(self, name, trail):
         self.name = name
         self.trail = trail
-    
+    # não utiliza o self, ou seja nenhuma instancia da classe, por isso poderia estar em qualquer lugar do codigo que ainda sim funcionaria
     @staticmethod
     def courses_trail(trail):
         if trail == 'Python Fundamentos':
