@@ -1,6 +1,6 @@
 """
 1 - O método estático não possui o parâmetro self.
-2 - O método de classe pode acessar mas não pode modificar o estado da classe 
+2 - O método estático pode acessar mas não pode modificar o estado da classe 
 3 - Usamos o decorator @staticmethod em python para criar um método estático
 """ 
 

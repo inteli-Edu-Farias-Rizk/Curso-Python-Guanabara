@@ -37,6 +37,7 @@ class Movie:
 mario = Movie('SuperMario', 2020, False, 200)
 mario.Avaliadores()
 print(f"A nota média dos filmes foi {mario.Media()} e o total de avaliações foi {mario.numAv}")
+print(mario.platform)
 
 #modificando a variavel de classe
 Movie.platform = "Amazon"
